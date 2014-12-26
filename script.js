@@ -4,7 +4,7 @@ var rating_selector = '.rating .num',
     rating = parseFloat($(rating_selector).html().replace(',', '.')),
     karma = parseFloat($('.score .num').html().replace(',', '.')),
     lastPostCommentsCount = parseInt($(comments_selector).first().html()),
-    delay = 1 * 000, // 1 second
+    delay = 1 * 1000, // 1 second
     username = document.location.pathname.split('/')[2]; // Get username from current URL
 
 setInterval(function () {
